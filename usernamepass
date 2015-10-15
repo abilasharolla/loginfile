@@ -1,0 +1,36 @@
+<!Doctype html>
+<html>
+<body>
+<h1>login form</h1>
+
+username:<input id="username" type='text' pattern='[A-Za-z\\s]*'/> 
+<p id="demo" ></p>
+
+password:<input id="pass" type="password"> <br<br>
+
+
+
+<button type=button onclick="myValidation">validation</button><br><br>
+
+
+      <button type=hidden onclick="myFunction()">submit</button>
+	  <p id="rex"></p>
+ 
+ 
+<script>
+function myValidation(){
+var x;
+if(x=[a-zA-Z]){
+document.getElementById("demo").innerHTML="perfect";
+}
+else{
+alert.("alphabets only");
+}
+}
+</script>
+<script>
+function myFunction(){
+document.getElementById("rex").innerHTML="submitted sucessfully";
+}
+</body>
+</html>
