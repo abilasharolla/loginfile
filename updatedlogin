@@ -1,0 +1,39 @@
+<html>
+<h1 align=center>Login Form</h1>
+<body>
+<table align=center>
+
+<tr><td><form name="frm">
+UserName: <input type="text" name="alphabet" onkeyup="AllowAlphabet()">
+</form><br;>
+
+</td></tr>
+<script type="text/javascript">document.onload = ctck();</script>
+</td></tr>
+</table>
+<table align=center>
+<tr><td>
+password:<input type="password" align=center><br><br><br>
+<button type=button onclick=myFunction() align=center>submit</button>
+<p id="demo"></p>
+</td></tr>
+</table>
+<script type="text/javascript">
+
+function AllowAlphabet(){
+if (!frm.alphabet.value.match(/^[a-zA-Z]+$/) && frm.alphabet.value !="")
+{
+frm.alphabet.value="";
+frm.alphabet.focus();
+alert("Please Enter only alphabets in text");
+}
+}
+</script>
+<script>
+function myFunction()
+{
+document.getElementById("demo").innerHTML="sumitted succesfully";
+}
+</script>
+</body>
+</html>
